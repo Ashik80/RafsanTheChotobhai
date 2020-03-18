@@ -92,6 +92,7 @@ ul {
 }
 .rightside {
     margin-left: 150px;
+    z-index: -10;
 }
 
 .header-area {
@@ -159,6 +160,7 @@ ul {
     background-color: #ff3434;
     transition: .7s;
 }
+
 .about-img {
     background-image: url('https://i.pinimg.com/originals/6f/eb/52/6feb52cd80829b877b853d0540ef8165.jpg');
     height: 142vh;

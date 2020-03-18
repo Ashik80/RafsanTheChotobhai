@@ -16,4 +16,8 @@ $(document).ready(function(){
             counter = 0;
         }
     }
+    
+    $("#toggler").click(function(){
+        $('.sidenav').toggleClass("is-visible");
+    })
 })

@@ -279,6 +279,9 @@ ul {
     .sidenav {
         visibility: hidden;
         width: 0px;
+        z-index: 5999;
+        overflow: auto;
+        transition: .6s;
     }
     
     .about-content {
@@ -296,4 +299,10 @@ ul {
 
 .mlogo {
     width: 50%;
+}
+
+.is-visible {
+    visibility: visible;
+    width: 150px;
+    transition: .6s;
 }

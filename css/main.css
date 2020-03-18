@@ -254,3 +254,46 @@ ul {
 .suscribe {
     margin-top: 50px;
 }
+
+.mobile-menu {
+    position: fixed;
+    background-color: #141313;
+    height: 60px;
+    width: 100%;
+    padding-top: 12px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 111;
+}
+
+@media only screen and (max-width: 574px) and (min-width: 0px){
+    .mobile-menu {
+        padding-left: 20px;
+        padding-right: 20px;
+        visibility: visible;
+        opacity: 1;
+    }
+    .rightside {
+        margin-left: 0;
+    }
+    .sidenav {
+        visibility: hidden;
+        width: 0px;
+    }
+    
+    .about-content {
+        height: 180vh;
+    }
+}
+
+.toggle {
+    text-align: right;
+    width: 50%;
+    color: white;
+    font-size: 25px;
+    transition: .6s;
+}
+
+.mlogo {
+    width: 50%;
+}

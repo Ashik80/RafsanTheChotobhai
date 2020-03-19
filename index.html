@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafsan The Chotobhai</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/76671abf54.js"></script>
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <script src="js/site.js" defer></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +33,7 @@
             </a>
         </div>
         <nav>
-            <ul>
+            <ul id="sidenav">
                 <li>
                     <a href="#home" class="current home" data-scroll-nav="0">HOME</a>
                 </li>
@@ -34,16 +41,16 @@
                     <a href="#about" class="about" data-scroll-nav="1">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#about" data-scroll-nav="2">VIDEOS</a>
+                    <a href="#videos" class="videos" data-scroll-nav="2">VIDEOS</a>
                 </li>
                 <li>
-                    <a href="#about" data-scroll-nav="3">GALLERY</a>
+                    <a href="#gallery" class="gallery" data-scroll-nav="3">GALLERY</a>
                 </li>
                 <li>
-                    <a href="#about" data-scroll-nav="4">BLOG</a>
+                    <a href="#blog" class="blog" data-scroll-nav="4">BLOG</a>
                 </li>
                 <li>
-                    <a href="#about" data-scroll-nav="5">CONTACT</a>
+                    <a href="#contact" class="contact" data-scroll-nav="5">CONTACT</a>
                 </li>
             </ul>
         </nav>
@@ -73,7 +80,7 @@
         </div>
     </div>
 
-    <div class="rightside">
+    <div class="rightside" data-spy="scroll" data-target="#sidenav" data-offset="50">
         <div class="mobile-menu">
             <div class="container-fluid">
                 <div class="row">
@@ -157,10 +164,120 @@
                 </div>
             </div>
         </div>
+
+        <div id="videos" data-scroll-index="2">
+            <div class="my-videos-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-heading">
+                                <h3>Latest<span class="text-col">videos</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel1">
+                        <div id="multi-item-example">
+                            <div class="owl-carousel">
+                                <div>
+                                    <div class="card border-0 mr-4">
+                                        <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card border-0 mr-4">
+                                        <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card border-0 mr-4">
+                                        <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card border-0 mr-4">
+                                        <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card border-0 mr-4">
+                                        <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card border-0 mr-4">
+                                        <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-heading">
+                                <h3>Featured<span class="text-col">videos</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel2">
+                        <div id="multi-item-example2" class="carousel slide carousel-multi-item" data-ride="carousel">
+                            <div class="controls-top cust-cont">
+                                <a class="btn-floating px-5" href="#multi-item-example2" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                <a class="btn-floating px-5" href="#multi-item-example2" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                            </div>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                                            <div class="card border-0">
+                                                <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                                            <div class="card border-0">
+                                                <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                                            <div class="card border-0">
+                                                <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                                            <div class="card border-0">
+                                                <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                                            <div class="card border-0">
+                                                <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 col-sm-4 col-xs-4">
+                                            <div class="card border-0">
+                                                <img class="card-img-top" src="https://i.ytimg.com/vi/hslPRlNQ93A/maxresdefault.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ol class="carousel-indicators cust-ind">
+                                <li data-target="#multi-item-example2" data-slide-to="0" class="active"></li>
+                                <li data-target="#multi-item-example2" data-slide-to="1"></li>
+                            </ol>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body></html>

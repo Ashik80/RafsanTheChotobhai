@@ -58,7 +58,8 @@ ul {
     background-color: #ff3434;
     transition: .6s;
     width: 170px;
-    border-bottom-right-radius: 25px;;
+    border-bottom-right-radius: 25px;
+    ;
     border-top-right-radius: 25px;
     color: white;
     text-decoration: none;
@@ -90,13 +91,14 @@ ul {
     color: #ff3434;
     transition: .6s;
 }
+
 .rightside {
     margin-left: 150px;
     z-index: -10;
 }
 
 .header-area {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('https://i.ytimg.com/vi/RkPDCI_ZSWM/maxresdefault.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ytimg.com/vi/RkPDCI_ZSWM/maxresdefault.jpg');
     height: 100vh;
     background-size: cover;
 }
@@ -140,6 +142,7 @@ ul {
     line-height: 29px;
     display: block;
 }
+
 .learnmore {
     margin-top: 25px;
 }
@@ -170,7 +173,7 @@ ul {
 
 .about-content {
     padding: 120px 30px;
-    background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)), url('https://fdn.gsmarena.com/imgroot/news/20/01/samsung-galaxy-watch-active-2/-727w2/gsmarena_002.jpg');
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url('https://fdn.gsmarena.com/imgroot/news/20/01/samsung-galaxy-watch-active-2/-727w2/gsmarena_002.jpg');
     height: 142vh;
     background-size: cover;
     background-position: 50% 0;
@@ -233,6 +236,7 @@ ul {
 .suscribe h4 {
     margin-top: 30px;
 }
+
 .single-count-area {
     color: white;
     font-weight: 700;
@@ -268,16 +272,18 @@ ul {
     z-index: 111;
 }
 
-@media only screen and (max-width: 574px) and (min-width: 0px){
+@media only screen and (max-width: 574px) and (min-width: 0px) {
     .mobile-menu {
         padding-left: 20px;
         padding-right: 20px;
         visibility: visible;
         opacity: 1;
     }
+
     .rightside {
         margin-left: 0;
     }
+
     .sidenav {
         visibility: hidden;
         width: 0px;
@@ -285,7 +291,7 @@ ul {
         overflow: auto;
         transition: .6s;
     }
-    
+
     .about-content {
         height: 175vh;
     }
@@ -307,4 +313,61 @@ ul {
     visibility: visible;
     width: 150px;
     transition: .6s;
+}
+
+.my-videos-area {
+    background-color: #0f0f0f;
+    padding: 120px 0;
+}
+
+.section-heading h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    padding: 0 0 30px 0;
+}
+
+.cust-ind {
+    position: relative;
+    top: 10px;
+}
+
+.cust-cont {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+.btn-floating {
+    font-size: 30px;
+    color: white;
+}
+
+#multi-item-example a:hover {
+    color: #ff3434;
+    transition: .7s;
+}
+
+#multi-item-example2 a:hover {
+    color: #ff3434;
+    transition: .7s;
+}
+
+
+@media (min-width: 0px) {
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media only screen and (max-width: 574px) and (min-width: 0px) {
+    .cust-cont {
+        margin-top: 10px;
+    }
+}
+
+.featured {
+    margin-top: 90px;
 }

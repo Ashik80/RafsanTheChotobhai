@@ -32,7 +32,7 @@ $(document).ready(function () {
             },
             'slow');
     });
-    
+
     $(".about").click(function () {
         $('html,body').animate({
                 scrollTop: $("#about").offset().top
@@ -40,8 +40,9 @@ $(document).ready(function () {
             'slow');
         $(".about").addClass("current");
         $(".home").removeClass("current");
+        $(".videos").removeClass("current");
     });
-    
+
     $(".home").click(function () {
         $('html,body').animate({
                 scrollTop: $("#home").offset().top
@@ -49,5 +50,22 @@ $(document).ready(function () {
             'slow');
         $(".about").removeClass("current");
         $(".home").addClass("current");
+        $(".videos").removeClass("current");
     });
+
+    $(".videos").click(function () {
+        $('html,body').animate({
+                scrollTop: $("#videos").offset().top
+            },
+            'slow');
+        $(".about").removeClass("current");
+        $(".home").removeClass("current");
+        $(".videos").addClass("current");
+    });
+    
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        autoplay:true
+    });
+
 })
